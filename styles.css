@@ -1,0 +1,112 @@
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 10; /* Asegura que esté por encima del contenido */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #4CAF50; /* Verde */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.fullscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que la sección ocupe toda la pantalla */
+    background-color: #000; /* Fondo negro */
+    margin-top: 60px; /* Ajuste para que no quede tapado por el header */
+}
+
+.imagen-inicio {
+    width: 1024px;
+    height: 1024px;
+    object-fit: cover; /* Mantiene la relación de aspecto de la imagen */
+}
+
+/* Contenedor de las imágenes y textos */
+.imagenes-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.actualizacion-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.actualizacion-item img {
+    width: 300px; /* Ajusta el tamaño de las imágenes de actualizaciones */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Sección de Contacto */
+.contacto-redes {
+    margin: 20px;
+    text-align: center;
+}
+
+.contacto-redes form {
+    margin-bottom: 20px;
+}
+
+.contacto-redes input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+}
+
+.contacto-redes button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contacto-redes button:hover {
+    background-color: #3e8e41;
+}
+
+#redes-guardadas p {
+    margin: 5px 0;
+}
+
+/* Ocultar secciones por defecto */
+.seccion-oculta {
+    display: none;
+}

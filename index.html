@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Servidor Freeroam</title>
+</head>
+<body>
+    <header>
+        <h1>Servidor Freeroam</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+                <li><a href="#" onclick="mostrarSeccion('actualizaciones')">Actualizaciones</a></li>
+                <li><a href="#" onclick="mostrarSeccion('galeria-vip')">Galería VIP</a></li>
+                <li><a href="#" onclick="mostrarSeccion('bases-privadas')">Bases Privadas</a></li>
+                <li><a href="#" onclick="mostrarSeccion('rangos')">Rangos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="fullscreen">
+            <img src="https://cdn.discordapp.com/attachments/1287911097294127175/1290119258818220082/DALLE_2024-09-29_16.19.01_-_An_image_with_the_text_Buenos_Aires_Potente_in_bold_futuristic_font_placed_centrally_on_a_black_background._In_the_background_realistic_lightning.jpg?ex=66fb4cb0&is=66f9fb30&hm=b7f63f3efea091486203a9e96f40e94393739398be8e80e774687a8dbef1a5b4&" alt="Bienvenido al Servidor Freeroam" class="imagen-inicio">
+        </section>
+
+        <!-- Sección Actualizaciones -->
+        <section id="actualizaciones" class="galeria seccion-oculta">
+            <h2>Actualizaciones</h2>
+            <div class="imagenes-contenedor">
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_1" alt="Actualización 1">
+                    <p>Texto para la actualización 1</p>
+                </div>
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_2" alt="Actualización 2">
+                    <p>Texto para la actualización 2</p>
+                </div>
+                <!-- Puedes agregar más imágenes aquí -->
+            </div>
+        </section>
+
+        <!-- Sección Galería VIP -->
+        <section id="galeria-vip" class="galeria seccion-oculta">
+            <h2>Galería VIP</h2>
+            <div class="imagenes-contenedor">
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_VIP_1" alt="Galería VIP 1">
+                    <p>Texto para la imagen de la galería VIP 1</p>
+                </div>
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_VIP_2" alt="Galería VIP 2">
+                    <p>Texto para la imagen de la galería VIP 2</p>
+                </div>
+                <!-- Puedes agregar más imágenes aquí -->
+            </div>
+        </section>
+
+        <!-- Sección Bases Privadas -->
+        <section id="bases-privadas" class="galeria seccion-oculta">
+            <h2>Bases Privadas</h2>
+            <div class="imagenes-contenedor">
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_BASE_1" alt="Base Privada 1">
+                    <p>Texto para la imagen de la base privada 1</p>
+                </div>
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_BASE_2" alt="Base Privada 2">
+                    <p>Texto para la imagen de la base privada 2</p>
+                </div>
+                <!-- Puedes agregar más imágenes aquí -->
+            </div>
+        </section>
+
+        <!-- Sección Rangos -->
+        <section id="rangos" class="galeria seccion-oculta">
+            <h2>Rangos</h2>
+            <div class="imagenes-contenedor">
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_RANGO_1" alt="Rango 1">
+                    <p>Texto para el rango 1</p>
+                </div>
+                <div class="actualizacion-item">
+                    <img src="URL_DE_LA_IMAGEN_RANGO_2" alt="Rango 2">
+                    <p>Texto para el rango 2</p>
+                </div>
+                <!-- Puedes agregar más imágenes aquí -->
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="seccion-oculta">
+            <h2>Contacto</h2>
+            <div class="contacto-redes">
+                <p><strong>Instagram:</strong> <a href="URL_INSTAGRAM" target="_blank">Tu Instagram</a></p>
+                <p><strong>TikTok:</strong> <a href="URL_TIKTOK" target="_blank">Tu TikTok</a></p>
+                <p><strong>Servidor de Discord:</strong> <a href="https://discord.gg/YqN3nEtxKQ" target="_blank">Tu Discord</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Servidor Freeroam. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(seccionId) {
+            var secciones = document.querySelectorAll('section');
+            secciones.forEach(function(seccion) {
+                seccion.classList.add('seccion-oculta');
+            });
+
+            var seccionAMostrar = document.getElementById(seccionId);
+            if (seccionAMostrar) {
+                seccionAMostrar.classList.remove('seccion-oculta');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarSeccion('inicio');
+        });
+    </script>
+</body>
+</html>
